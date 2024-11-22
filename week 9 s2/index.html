@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="istockphoto-1369355289-612x612.jpg"
+      type="image/x-icon"
+    />
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/css.css" />
+  </head>
+  <body>
+    <div class="container text-center my-5">
+      <div class="tittle mx-auto my-5">
+        <h1>Bookmarker</h1>
+        <div class="overlay"></div>
+      </div>
+      <hr />
+      <span class="sitetitle"
+        ><i class="fa-solid fa-bookmark" style="color: #41a55b"></i> Bookmark
+        your favorite sites
+        <i class="fa-solid fa-bookmark" style="color: #b1ac4a"></i
+      ></span>
+
+      <div class="input text-start mt-5">
+        <label class="mb-3" for="name"
+          ><i class="fa-solid fa-book me-3"></i> Site Name</label
+        >
+          <input
+            oninput="validate(this)"
+            type="text"
+            id="name"
+            class="form-control mb-2"
+            placeholder="Bookmark Name"
+            aria-label="Username"
+          />
+          <div class="alert mb-0 alert-danger d-none fs-5">
+          Enter more than 3 charcter
+        </div>
+        <label class="mb-3 mt-5" for="name2"
+          ><i class="fa-solid fa-link me-3"></i> Site URL</label
+        >
+          <input
+          oninput="validate(this)"
+            type="text"
+            id="name2"
+            class="form-control"
+            placeholder="Bookmark Name"
+            aria-label="Username"
+          />
+          <div class="alert alert-danger fs-5 mt-2 d-none">
+            Enter correct link 
+          </div>
+        <button class="bttn" onclick="add()">Sumbit</button>
+      </div>
+      
+      <hr />
+
+<div class="row bg-white mt-5"  >
+  <div class="row pt-2">
+    <div class="col-3">
+      <div class="head">
+        <p>Index</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="head">
+        <p>Website Name</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="head">
+        <p>Visit</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="head">
+        <p>DElete</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row " id="rr">
+    
+  </div>
+</div>
+    </div>
+
+    <script src="logic/bootstrap.bundle.min.js"></script>
+    <script src="logic/js.js"></script>
+  </body>
+</html>
